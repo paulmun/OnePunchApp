@@ -15,6 +15,9 @@
 		DA20B1851DD636EC00F738BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA20B1831DD636EC00F738BD /* LaunchScreen.storyboard */; };
 		DA20B1901DD636EC00F738BD /* OnePunchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20B18F1DD636EC00F738BD /* OnePunchAppTests.swift */; };
 		DA20B19B1DD636EC00F738BD /* OnePunchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA20B19A1DD636EC00F738BD /* OnePunchAppUITests.swift */; };
+		DA20B1AA1DD6462F00F738BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA20B1A91DD6462F00F738BD /* CoreMotion.framework */; };
+		DA380C081DD6526300E34E35 /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA380C071DD6526300E34E35 /* PunchViewController.swift */; };
+		DA380C0A1DD68E1700E34E35 /* SpeedPunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA380C091DD68E1700E34E35 /* SpeedPunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		DA20B1961DD636EC00F738BD /* OnePunchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePunchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA20B19A1DD636EC00F738BD /* OnePunchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePunchAppUITests.swift; sourceTree = "<group>"; };
 		DA20B19C1DD636EC00F738BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA20B1A91DD6462F00F738BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DA380C071DD6526300E34E35 /* PunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PunchViewController.swift; path = ../PunchViewController.swift; sourceTree = "<group>"; };
+		DA380C091DD68E1700E34E35 /* SpeedPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedPunchViewController.swift; path = ../SpeedPunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA20B1AA1DD6462F00F738BD /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 				DA20B18E1DD636EC00F738BD /* OnePunchAppTests */,
 				DA20B1991DD636EC00F738BD /* OnePunchAppUITests */,
 				DA20B1751DD636EC00F738BD /* Products */,
+				DA20B1A81DD6462F00F738BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +107,8 @@
 		DA20B1761DD636EC00F738BD /* OnePunchApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA380C091DD68E1700E34E35 /* SpeedPunchViewController.swift */,
+				DA380C071DD6526300E34E35 /* PunchViewController.swift */,
 				DA20B1771DD636EC00F738BD /* AppDelegate.swift */,
 				DA20B1791DD636EC00F738BD /* ViewController.swift */,
 				DA20B17B1DD636EC00F738BD /* Main.storyboard */,
@@ -126,6 +136,14 @@
 				DA20B19C1DD636EC00F738BD /* Info.plist */,
 			);
 			path = OnePunchAppUITests;
+			sourceTree = "<group>";
+		};
+		DA20B1A81DD6462F00F738BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA20B1A91DD6462F00F738BD /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA380C0A1DD68E1700E34E35 /* SpeedPunchViewController.swift in Sources */,
 				DA20B1801DD636EC00F738BD /* OnePunchApp.xcdatamodeld in Sources */,
+				DA380C081DD6526300E34E35 /* PunchViewController.swift in Sources */,
 				DA20B17A1DD636EC00F738BD /* ViewController.swift in Sources */,
 				DA20B1781DD636EC00F738BD /* AppDelegate.swift in Sources */,
 			);
@@ -422,7 +442,7 @@
 				DEVELOPMENT_TEAM = DHM8245DER;
 				INFOPLIST_FILE = OnePunchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulmun.OnePunchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -435,7 +455,7 @@
 				DEVELOPMENT_TEAM = DHM8245DER;
 				INFOPLIST_FILE = OnePunchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulmun.OnePunchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -518,6 +538,7 @@
 				DA20B1A11DD636EC00F738BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA20B1A21DD636EC00F738BD /* Build configuration list for PBXNativeTarget "OnePunchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +547,7 @@
 				DA20B1A41DD636EC00F738BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA20B1A51DD636EC00F738BD /* Build configuration list for PBXNativeTarget "OnePunchAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +556,7 @@
 				DA20B1A71DD636EC00F738BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
